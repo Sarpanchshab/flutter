@@ -1,3 +1,4 @@
+import 'package:firstproject/learning/splash_screen.dart';
 import 'package:firstproject/task/Instagram_card.dart';
 import 'package:firstproject/learning/bottom_navigation_bar.dart';
 import 'package:firstproject/learning/bottomsheet.dart';
@@ -7,6 +8,7 @@ import 'package:firstproject/learning/gridview.dart';
 import 'package:firstproject/learning/checkbox.dart';
 import 'package:firstproject/learning/listview.dart';
 import 'package:firstproject/learning/listviewbuilder.dart';
+import 'package:firstproject/task/grofast/splashscreen_1.dart';
 import 'package:firstproject/task/loginpage.dart';
 import 'package:firstproject/learning/snackbar.dart';
 import 'package:firstproject/task/studentregistration.dart';
@@ -15,13 +17,14 @@ import 'package:firstproject/task/taskbutton.dart';
 import 'package:firstproject/task/tasksession.dart';
 import 'package:firstproject/learning/textfield.dart';
 import 'package:flutter/material.dart';
-
 import 'learning/button.dart';
 import 'learning/dialogbox.dart';
 import 'learning/stack.dart';
 import 'task/icon_card_image.dart';
 import 'learning/form_validation.dart';
 import 'learning/radiobox.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -71,7 +74,7 @@ class MyApp extends StatelessWidget {
       //  home: listviewbuilder()
       //  home: StackWidget()
       // home: TextFieldExample(),
-
+      //   home: SplashScreen()
 
       //Task Page Calling
 
@@ -82,7 +85,8 @@ class MyApp extends StatelessWidget {
       // home: StudentRegistration(),
       //   home: TaskButton()
       //   home: TaskSession()
-      home: CoffeeCaffin(),
+      // home: CoffeeCaffin(),
+      home: GroFastSplashScreen()
 
     );
   }
