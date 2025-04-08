@@ -1,3 +1,4 @@
+import 'package:firstproject/dart/class_ontap.dart';
 import 'package:firstproject/learning/splash_screen.dart';
 import 'package:firstproject/task/Instagram_card.dart';
 import 'package:firstproject/learning/bottom_navigation_bar.dart';
@@ -86,7 +87,10 @@ class MyApp extends StatelessWidget {
       //   home: TaskButton()
       //   home: TaskSession()
       // home: CoffeeCaffin(),
-      home: GroFastSplashScreen()
+      // home: GroFastSplashScreen()
+
+      //dart programming language
+      home:ClassOntap()
 
     );
   }
