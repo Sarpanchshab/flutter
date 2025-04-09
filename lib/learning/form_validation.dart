@@ -1,7 +1,7 @@
 // Import Flutter Material UI library
 import 'package:flutter/material.dart';
 
-// This is a StatefulWidget for form validation
+// This is a StatefulWidget because data (text) can change
 class FormValidationWidget extends StatefulWidget {
   const FormValidationWidget({super.key});
 
@@ -9,60 +9,75 @@ class FormValidationWidget extends StatefulWidget {
   State<FormValidationWidget> createState() => _FormValidationWidgetState();
 }
 
-// This is the state class
+// This class holds the UI and logic
 class _FormValidationWidgetState extends State<FormValidationWidget> {
-
-  // This key is used to check the form is valid or not
+  // Create a key to check form is valid or not
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
-  // This controller helps us to get the text entered by the user
+  // Create a controller to get the text from input box
   TextEditingController nameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(  // Scaffold gives structure (App layout)
-      body: Container( // Container gives fixed size to the form
-        height: 500,
-        width: 1000,
-        child: Form( // Form widget holds input fields and connects to formKey
-            key: formKey, // Connect the form to the GlobalKey
-            child: Column( // Column shows items vertically
+    return Scaffold(
+      // Makes screen layout (AppBar, Body etc.)
+      body: Container(
+        // Container gives fixed size to form area
+        height: 500, // Set height
+        width: 1000, // Set width
+        child: Form(
+          // Form widget to manage validation
+          key: formKey, // Connect form with the GlobalKey
+          child: Center(
+            child: Column(
+              // Column shows children in vertical line
               children: [
+                // Text input field
+                // Add a name label above the field
+                Text("Name", style: TextStyle(fontSize: 16)),
 
-                // Text input field for name
-                TextFormField(
-                  // This validator checks if the input is empty
-                  validator: (value){
-                    if(value!.isEmpty){
-                      // If empty, show this message
-                      return "Please enter text";
-                    }
-                    return null; // If not empty, no error
-                  },
-                  // Connect the text field to the controller
-                  controller: nameController,
-                ),
+                // Text input field with label inside the box
+                Container(
+                  margin: EdgeInsets.only(top: 40),
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      labelText: "Enter your name", // Label inside the input box
+                      border: OutlineInputBorder(), // Adds a box border
+                    ),
 
-                // Button to submit the form
-                ElevatedButton(
-                    onPressed: () {
-                      // Check if form is valid, print true/false
-                      print("Is validate ${formKey.currentState!.validate()}");
-
-                      // Print the name entered in the text field
-                      print("Name Value is ${nameController.text}");
-
-                      // If valid, you can do some action here
-                      if(formKey.currentState!.validate()){
-                        // Example: you can show success message
+                    // This checks if the input is empty
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return "Please enter text"; // Show error if empty
                       }
+                      return null; // No error
                     },
 
-                    // Text on the button
-                    child: Text("Register")
-                )
+                    controller: nameController, // Connect text field to controller
+                  ),
+                ),
+
+                // Submit button
+                ElevatedButton(
+                  onPressed: () {
+                    // Check if form is valid or not
+                    print("Is validate ${formKey.currentState!.validate()}");
+
+                    // Print the name entered by user
+                    print("Name Value is ${nameController.text}");
+
+                    // If form is valid, do something
+                    if (formKey.currentState!.validate()) {
+                      // You can show a success message, save data etc.
+                    }
+                  },
+                  child: Text("Register"), // Text on the button
+                ),
               ],
-            )),
+            ),
+          ),
+        ),
       ),
     );
   }

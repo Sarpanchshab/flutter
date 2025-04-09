@@ -38,8 +38,23 @@ class _StackWidgetState extends State<StackWidget> {
 
               // 🔲 Second child (positioned box on top of first one)
               Positioned(
-                bottom: 0, // stick to bottom of yellow box
+                bottom: 10, // stick to bottom of yellow box
                 left: 100, // move to right side
+                child: Container(
+                  height: 60,
+                  width: 50,
+                  color: Colors.blue,
+                  child: Text(
+                    "Screen 2",
+                    style: TextStyle(color: Colors.white), // white text on blue box
+                  ),
+                ),
+              ),
+
+              // Third Child (positioned box on top of first one)
+              Positioned(
+                bottom: 10, // stick to bottom of yellow box
+                left: 30, // move to right side
                 child: Container(
                   height: 60,
                   width: 50,

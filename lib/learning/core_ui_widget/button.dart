@@ -8,7 +8,7 @@ class Button extends StatelessWidget {
       appBar: AppBar(title: Text('Different Types of Buttons')),
       body: Padding(
         padding: EdgeInsets.all(26.0),
-        child: Row(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(onPressed: () {}, child: Text('Elevated Button')),

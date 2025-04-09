@@ -1,29 +1,50 @@
 import 'package:firstproject/dart/class_ontap.dart';
+import 'package:firstproject/dart/listfunction.dart';
+import 'package:firstproject/dart/map_function.dart';
+import 'package:firstproject/learning/core_ui_widget/image.dart';
+import 'package:firstproject/learning/layout_widget/container.dart';
+import 'package:firstproject/learning/layout_widget/expanded_&_flexible.dart';
+import 'package:firstproject/learning/layout_widget/rows_&_column.dart';
+import 'package:firstproject/learning/layout_widget/sizedbox.dart';
+import 'package:firstproject/learning/layout_widget/spacer.dart';
+import 'package:firstproject/learning/layout_widget/wrap_&_alignment.dart';
+import 'package:firstproject/learning/pageview_with_dots.dart';
 import 'package:firstproject/learning/splash_screen.dart';
+import 'package:firstproject/learning/core_ui_widget/text.dart';
 import 'package:firstproject/task/Instagram_card.dart';
-import 'package:firstproject/learning/bottom_navigation_bar.dart';
-import 'package:firstproject/learning/bottomsheet.dart';
+import 'package:firstproject/learning/navigation_&_dialogs/bottom_navigation_bar.dart';
+import 'package:firstproject/learning/navigation_&_dialogs/bottomsheet.dart';
 import 'package:firstproject/task/coffee_cafe_1.dart';
-import 'package:firstproject/task/first_page.dart';
-import 'package:firstproject/learning/gridview.dart';
-import 'package:firstproject/learning/checkbox.dart';
-import 'package:firstproject/learning/listview.dart';
-import 'package:firstproject/learning/listviewbuilder.dart';
+import 'package:firstproject/learning/first_page.dart';
+import 'package:firstproject/learning/display_widget/gridview.dart';
+import 'package:firstproject/learning/input_widget/checkbox.dart';
+import 'package:firstproject/learning/display_widget/listview.dart';
+import 'package:firstproject/learning/display_widget/listviewbuilder.dart';
 import 'package:firstproject/task/grofast/splashscreen_1.dart';
 import 'package:firstproject/task/loginpage.dart';
-import 'package:firstproject/learning/snackbar.dart';
+import 'package:firstproject/learning/navigation_&_dialogs/snackbar.dart';
 import 'package:firstproject/task/studentregistration.dart';
 import 'package:firstproject/learning/navigator_push_page1.dart';
 import 'package:firstproject/task/taskbutton.dart';
+import 'package:firstproject/task/taskscreen/taskscreen.dart';
 import 'package:firstproject/task/tasksession.dart';
-import 'package:firstproject/learning/textfield.dart';
+import 'package:firstproject/learning/input_widget/textfield.dart';
 import 'package:flutter/material.dart';
-import 'learning/button.dart';
-import 'learning/dialogbox.dart';
-import 'learning/stack.dart';
+import 'learning/core_ui_widget/button.dart';
+import 'learning/navigation_&_dialogs/dialogbox.dart';
+import 'learning/core_ui_widget/icon.dart';
+import 'learning/display_widget/card.dart';
+import 'learning/display_widget/expansion_tile.dart';
+import 'learning/display_widget/listtile.dart';
+import 'learning/display_widget/table_example.dart';
+import 'learning/input_widget/dropdownbutton.dart';
+import 'learning/input_widget/slider.dart';
+import 'learning/input_widget/switch.dart';
+import 'learning/layout_widget/stack.dart';
+import 'learning/pageview.dart';
 import 'task/icon_card_image.dart';
 import 'learning/form_validation.dart';
-import 'learning/radiobox.dart';
+import 'learning/input_widget/radiobox.dart';
 
 
 
@@ -60,22 +81,49 @@ class MyApp extends StatelessWidget {
 
       //Learning Page Calling
 
-      // home: CoffeeCaffin()
+      // home: FirstPage()
+      // home: TextPage(),
+      // home: IconPage(),
+      // home: ImagePage()
+      // home: Button()
+
+      // home:ContainerExample()
+      // home: RowColumnExample()
       // home: StackWidget()
-      // home: CheckboxRadioPage(),
-      // home: StudentRegistration()
+      // home: ExpandedFlexibleExample(),
+      // home: WrapAlignExample(),
+      // home: SizedBoxExample(),
+      // home: SpacerExample(),
+
+      // home: TextFieldExample(),
+      // home: CheckboxExample()
+      // home: RadioButtonExample(),
+      // home: DropdownExample(),
+      //   home: SwitchExample()
+      //   home: SliderExample()
+
+        // home: ImageCardExample()
+        // home: ListTileExample()
+      // home: GridViewScreen(),
+      // home: Listview()
+      //  home:  listviewbuilder()
+      //   home: TableExample()
+      //   home: ExpansionTileExample()
+
       // home: DialogBox()
       // home: SnackBarExample()
       // home: BottomSheetExample()
-      // home: CheckboxExample()
-      // home: bottomBar(),
-      // home: FormValidationWidget()
+      // home: bottomBar()
+      //   home: ImageSliderPage()
+      // home: ImageSliderPageWithDots(),
+
+      home: FormValidationWidget()
       // home: NavigatorPushPage1()
-      //    home: Listview()
-      //  home: listviewbuilder()
-      //  home: StackWidget()
-      // home: TextFieldExample(),
-      //   home: SplashScreen()
+        // home: SplashScreen()
+
+
+
+
 
       //Task Page Calling
 
@@ -84,13 +132,17 @@ class MyApp extends StatelessWidget {
       // home: InstagramCard()
       // home: loginpage()
       // home: StudentRegistration(),
+      // home: CoffeeCaffin()
       //   home: TaskButton()
       //   home: TaskSession()
       // home: CoffeeCaffin(),
       // home: GroFastSplashScreen()
+      //   home: TaskScreen()
 
       //dart programming language
-      home:ClassOntap()
+      // home:ClassOntap()
+      // home:ListFunction()
+      // home: MapFunction()
 
     );
   }

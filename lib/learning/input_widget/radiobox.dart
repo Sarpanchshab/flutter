@@ -1,18 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp()); // Entry point of the Flutter app
-}
-
-// Main app widget
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: RadioButtonExample(), // Setting the home screen of the app
-    );
-  }
-}
 
 // Stateful widget to handle radio button selection
 class RadioButtonExample extends StatefulWidget {
@@ -31,13 +18,14 @@ class _RadioButtonExampleState extends State<RadioButtonExample> {
       ),
       body: Column(
         children: [
+
           // First radio button (Option 1)
           ListTile(
             title: Text("Option 1"), // Label for radio button
             leading: Radio<String>(
               value: "Option 1", // Unique value assigned to this radio button
               groupValue: selectedOption, // Tracks which radio button is selected
-              onChanged: (String? value) { // Function triggered when user selects this radio button
+              onChanged: (value) { // Function triggered when user selects this radio button
                 setState(() {
                   selectedOption = value!; // Updates the selected option state
                 });

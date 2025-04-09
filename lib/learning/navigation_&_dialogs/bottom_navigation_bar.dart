@@ -1,6 +1,6 @@
 // These are packages you're using in the project
 import 'package:firstproject/task/Instagram_card.dart';
-import 'package:firstproject/task/first_page.dart';
+import 'package:firstproject/learning/first_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

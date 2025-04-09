@@ -41,7 +41,7 @@ class _listviewbuilderState extends State<listviewbuilder> {
         itemCount: arrNames.length, // 5 items in list
 
         // 🔁 Reverses the order (optional)
-        // reverse: true,
+        reverse: true,
 
         // 📏 Sets fixed size for each item (height/width)
         itemExtent: 100, // Since scroll is horizontal → this sets width
