@@ -31,6 +31,7 @@ import 'package:firstproject/task/tasksession.dart';
 import 'package:firstproject/learning/input_widget/textfield.dart';
 import 'package:flutter/material.dart';
 import 'learning/core_ui_widget/button.dart';
+import 'learning/drawer.dart';
 import 'learning/navigation_&_dialogs/dialogbox.dart';
 import 'learning/core_ui_widget/icon.dart';
 import 'learning/display_widget/card.dart';
@@ -114,12 +115,14 @@ class MyApp extends StatelessWidget {
       // home: SnackBarExample()
       // home: BottomSheetExample()
       // home: bottomBar()
+
       //   home: ImageSliderPage()
       // home: ImageSliderPageWithDots(),
 
-      home: FormValidationWidget()
+      // home: FormValidationWidget()
       // home: NavigatorPushPage1()
         // home: SplashScreen()
+        home: DrawerPage()
 
 
 
