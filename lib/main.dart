@@ -43,6 +43,8 @@ import 'learning/input_widget/slider.dart';
 import 'learning/input_widget/switch.dart';
 import 'learning/layout_widget/stack.dart';
 import 'learning/pageview.dart';
+import 'learning/stateful_widget.dart';
+import 'learning/textfield.dart';
 import 'task/icon_card_image.dart';
 import 'learning/form_validation.dart';
 import 'learning/input_widget/radiobox.dart';
@@ -122,7 +124,9 @@ class MyApp extends StatelessWidget {
       // home: FormValidationWidget()
       // home: NavigatorPushPage1()
         // home: SplashScreen()
-        home: DrawerPage()
+        // home: DrawerPage()
+        // home: MyTextFieldPage()
+        home: StatefulWidgetExample()
 
 
 
