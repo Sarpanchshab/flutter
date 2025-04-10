@@ -23,7 +23,8 @@ class _CheckboxExampleState extends State<CheckboxExample> {
 
             // ✅ Checkbox widget
             Checkbox(
-              value: isChecked, // current state
+              value: isChecked,
+              // current state
               onChanged: (value) {
                 setState(() {
                   isChecked = value!; // update state
